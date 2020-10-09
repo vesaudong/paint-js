@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAINT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="color">
+            <div class="btn" id="red" onclick="SetColor(red)"></div>
+            <div class="btn" id="green" onclick="SetColor(green)"></div>
+            <div class="btn" id="blue" onclick="SetColor(blue)"></div>
+            <div class="btn" id="yellow" onclick="SetColor(yellow)"></div>
+            <div class="btn" id="black" onclick="SetColor(black)"></div>
+            <div class="btn" id="white" onclick="SetColor(white)"></div>
+        </div>
+        <div class="paint">
+            <canvas id="canvas" width="600px" height="600px"></canvas>
+        </div>
+        <div class="size">
+            <div class="btn" onclick="SetSize(10)">10</div>
+            <div class="btn" onclick="SetSize(20)">20</div>
+            <div class="btn" onclick="SetSize(30)">30</div>
+            <div class="btn" onclick="SetSize(50)">50</div>
+            <div class="btn" onclick="SetSize(70)">70</div>
+            <div class="btn" onclick="SetSize(100)">100</div>
+        </div>
+    </div>
+
+    <script src="const.js"></script>
+    <script src="event.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
